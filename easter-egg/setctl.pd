@@ -1,0 +1,16 @@
+#N canvas 276 143 470 343 12;
+#X obj 96 186 r \$1;
+#X text 133 186 receive value from box;
+#X msg 96 218 set \$1;
+#X text 163 219 set value;
+#X obj 96 254 s \$1-set;
+#X text 169 255 send value;
+#X text 5 40 You must set the send and receive symbol in the number
+box properties;
+#X text 24 80 send "parametername";
+#X text 22 101 receive "parametername-set";
+#X text 52 8 SETCTL - This abstraction sets a control value;
+#X text 9 130 The number box label must match the argument name given
+to setctl;
+#X connect 0 0 2 0;
+#X connect 2 0 4 0;

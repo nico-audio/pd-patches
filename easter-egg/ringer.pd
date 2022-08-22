@@ -1,0 +1,25 @@
+#N canvas 164 22 492 494 12;
+#X obj 212 328 hip~ 10;
+#X obj 254 218 osc~;
+#X obj 212 281 *~;
+#X text 28 16 RING MODULATION;
+#X obj 120 118 inlet~;
+#X obj 211 409 outlet~;
+#X text 173 118 carrier;
+#X floatatom 254 165 5 0 0 0 - - -;
+#X obj 254 122 inlet;
+#X msg 349 130 0;
+#X obj 311 169 bng 15 250 50 0 empty empty off 1 -5 0 10 -258113 -262144
+-1;
+#X text 336 165 modulation index;
+#X text 344 108 reset index to 0;
+#X text 292 167 Hz;
+#X connect 0 0 5 0;
+#X connect 1 0 2 1;
+#X connect 2 0 0 0;
+#X connect 4 0 2 0;
+#X connect 7 0 1 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
+#X connect 10 0 9 0;
+#X coords 0 -1 1 1 80 45 2 250 150;
